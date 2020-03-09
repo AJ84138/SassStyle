@@ -1,0 +1,398 @@
+
+/* Common CSS
+---------------------------------------------------------------------------*/
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+h1 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  font-size: $font-24;
+  border-bottom: 1px solid $gray-light;
+}
+h2 {
+  margin-top: 0px;
+  font-size: $font-20;
+}
+h4 {
+  margin-top: 0px;
+  font-size: $font-16;
+}
+h3 {
+  margin-top: 10px;
+}
+img {
+  max-width: 100%;
+}
+.content-container {
+  padding: 20px 0px;
+
+}
+th {
+  font-weight: normal;
+}
+input[type="radio"] {
+  margin-right: 5px;
+}
+thead {
+  background: $blue-lightest;
+}
+.main-content {
+  padding: 15px 0px;
+  border: 3px solid $blue-light;
+  @include border-radius(5px);
+}
+.form-horizontal {
+  .control-label {
+    text-align: left;
+    padding-left: 0px;
+  }
+}
+a:hover,
+a:focus {
+  text-decoration: none !important;
+}
+.marg-t5 {
+  margin-top: 5px !important;
+}
+.marg-t10 {
+  margin-top: 10px !important;
+}
+.marg-t15 {
+  margin-top: 15px !important;
+}
+.marg-t20 {
+  margin-top: 20px !important;
+}
+textarea {
+  resize: none;
+}
+/* End Common CSS
+---------------------------------------------------------------------------*/
+
+/* Overwrite Bootstrap CSS
+---------------------------------------------------------------------------*/
+.form-horizontal {
+  .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+.form-group {
+  margin-bottom: 10px;
+}
+.glyphicon {
+  top: 3px;
+}
+.table {
+  margin-bottom: 0px;
+}
+hr {
+  border-color: $gray-light;
+}
+.btn-default {
+  background: $gray;
+  border-color: $gray;
+  color: $white;
+  &:hover,
+  &:focus {
+    background: $gray-light;
+    border-color: $gray-light;
+    color: $white;
+  }
+}
+.btn-primary {
+  background: $blue;
+}
+.btn-success {
+  background: $green;
+  border-color: $green;
+  &:hover,
+  &:focus {
+    background: $green-light;
+    border-color: $green-light;
+  }
+}
+.form-horizontal {
+  .control-label {
+    line-height: 13px;
+    padding-top: 10px;
+  }
+  .more-text {
+    padding-top: 5px;
+  }
+}
+.modal-header {
+  padding: 10px 15px;
+}
+select.form-control {
+  padding-left: 9px;
+}
+.form-control,
+.btn,
+.navbar-toggle {
+  @include border-radius(0px);
+}
+/* End Overwrite Bootstrap CSS
+---------------------------------------------------------------------------*/
+
+/*  Header CSS
+---------------------------------------------------------------------------*/
+.header {
+  /*border-bottom: 2px solid $gray-lighter;*/
+  /*box-shadow: 0px 3px 3px $blue-lighter;*/
+  /*background: url("../images/pattern.jpg") left top repeat;*/
+  border-bottom: 5px solid $blue;
+  .logo {
+    display: inline-block;
+    margin: 10px 0px;
+    width: 117px;
+  }
+  .user-status {
+    margin: 0px;
+    padding: 0px;
+    float: right;
+    li {
+      display: inline-block;
+      a {
+        padding: 20px 15px;
+        font-size: $font-16;
+        .glyphicon {
+          margin-left: 3px;
+          position: relative;
+          top: 4px;
+        }
+      }
+      a.dropdown-toggle {
+        background: $gray-light;
+        color: #ffffff;
+      }
+    }
+  }
+  .dropdown-menu {
+    padding: 0px;
+    right: 0px;
+    li {
+      display: block;
+      border-bottom: 1px solid $gray-light;
+      a {
+        padding:10px;
+        font-size: $font-size-base;
+      }
+    }
+  }
+  .open {
+    > .dropdown-menu {
+      animation: fadeInDown ease-in-out 0.5s;
+    }
+  }
+  #admin {
+    margin: 13px 10px;
+  }
+}
+.login {
+  margin: 13px 0px;
+}
+.login-page {
+  box-shadow: none;
+  border-width: 5px;
+  margin-top: 100px;
+  @include border-radius(0px);
+}
+.login-btn {
+  margin: 5px;
+  color: $white !important;
+  padding: 5px !important;
+  &:hover,
+  &:focus {
+    background: #449D44 !important;
+  }
+  .gly {
+    font-size: $font-18;
+    position: relative;
+    top: 1px;
+    margin-left: 4px;
+  }
+}
+
+.btn {
+  .glyphicon {
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: $font-16;
+  }
+}
+
+.main-nav {
+  text-align: right;
+  background: $blue;
+  margin-bottom: 20px;
+  /*border-bottom: 3px solid $gray-light;*/
+  ul {
+    padding: 0px;
+    margin: 0px;
+    li {
+      display: inline-block;
+      margin-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      position: relative;
+      color: $white;
+        a {
+          color: $white;
+          .glyphicon {
+            margin-left: 1px;
+            position: relative;
+            top: 4px;
+          }
+          &:hover,
+          &:focus {
+            color: $gray-lighter;
+            text-decoration: none;
+          }
+        }
+      > ul {
+        display: none;
+        position: absolute;
+        width: 200px;
+        left:0px;
+        top: 39px;
+        background: $blue;
+        z-index: 999;
+        li {
+          display: block;
+          text-align: left;
+          margin: 0px;
+          padding: 0px;
+          a {
+            color: $white;
+            text-align: left;
+            padding: 10px;
+            display: block;
+          }
+         ul {
+            left: 199px;
+           top: 0px;
+          }
+          &:last-child {
+            ul {
+              left: 199px;
+              top: 0px;
+            }
+          }
+        }
+
+      }
+      &:hover > ul {
+        display: block;
+      }
+
+      &:nth-last-child(2) {
+        ul {
+          li {
+            ul {
+              left: -199px;
+            }
+          }
+        }
+      }
+      &:last-child {
+        > ul {
+          left: -119px;
+          > li {
+            > ul {
+              left: -199px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+#search {
+  .form-group {
+    position: relative;
+    .form-control {
+      padding-right: 60px;
+    }
+    .go-btn {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+  }
+}
+.custom-slide {
+  margin: 3px 10px 0px 0px;
+  padding: 5px;
+  display: inline-block;
+  float: left;
+  background: $blue;
+  .icon-bar {
+    background: $white;
+  }
+}
+.admin-header {
+  h1 {
+    border-bottom: none;
+    font-size: $font-28;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: $screen-xs-max) {
+	.header  {
+		.col-sm-4,
+		.col-sm-8 { width: 50%;}
+	}
+}
+
+/*  End Header CSS
+---------------------------------------------------------------------------*/
+
+/* Sidebar
+------------------------------------------------*/
+.sidebar {
+  ul {
+    li {
+      position: relative;
+      border-bottom: 1px solid $gray-lighter;
+      display: table;
+      height: 55px;
+      text-align: center;
+      width: 100%;
+      a {
+        display: block;
+        padding: 5px 10px;
+        font-size: $font-16;
+        color: $gray-base;
+        display: table-cell;
+        vertical-align: middle;
+        line-height: normal;
+        text-align: left;
+        @include transition(all, 0.2s, ease-in-out);
+        &:hover,
+        &:focus {
+          background: $blue-lightest;
+          color: $blue;
+        }
+      }
+      &.active {
+        a {
+          background: $blue;
+          border-color: $blue;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+/* End Sidebar
+------------------------------------------------*/
+
+.breadcrumb {
+  @include border-radius(0px);
+  font-weight: bold;
+}

@@ -1,0 +1,35 @@
+$bootstrap-sass-asset-helper: false !default;
+//
+// Custom
+// --------------------------------------------------
+
+$blue           : #336699;
+$blue-light     : #3a93d0;
+$blue-lighter   : #8bcefc;
+$blue-lightest  : #e8f8f6;
+$blue-lightest2  : #bbf6ef;
+$white          : #ffffff;
+$red-color      : #fc0000;
+$green-dark     : #023F51;
+$green          : #669933;
+$green-light    : #84B74F;
+$gray-lightest  : #cccccc;
+
+$font-10: 10px;
+$font-12: 12px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-22: 22px;
+$font-24: 24px;
+$font-26: 26px;
+$font-28: 28px;
+
+$font-h1: 25px !default;
+
+$custom-bootstrap-sass-asset-helper: false !default;
+$custom-icon-font-path: if($custom-bootstrap-sass-asset-helper, "bootstrap/", "../fonts/") !default;
+//** File name for all font files.
+$custom-icon-font-name: "icomoon" !default;
+//** Element ID within SVG icon file.
+$custom-icon-font-svg-id: "icomoon" !default;

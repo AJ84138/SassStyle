@@ -1,0 +1,27 @@
+/* Custom Font Face
+---------------------------------------------------------------------------*/
+@font-face {
+  font-family: 'icomoon';
+  src: url(if($custom-bootstrap-sass-asset-helper, twbs-font-path('#{$custom-icon-font-path}#{$custom-icon-font-name}.eot'), '#{$custom-icon-font-path}#{$icon-font-name}.eot'));
+  src: url(if($custom-bootstrap-sass-asset-helper, twbs-font-path('#{$custom-icon-font-path}#{$custom-icon-font-name}.eot?#iefix'), '#{$custom-icon-font-path}#{$custom-icon-font-name}.eot?#iefix')) format('embedded-opentype'), url(if($custom-bootstrap-sass-asset-helper, twbs-font-path('#{$custom-icon-font-path}#{$custom-icon-font-name}.woff2'), '#{$custom-icon-font-path}#{$custom-icon-font-name}.woff2')) format('woff2'), url(if($custom-bootstrap-sass-asset-helper, twbs-font-path('#{$custom-icon-font-path}#{$custom-icon-font-name}.woff'), '#{$custom-icon-font-path}#{$custom-icon-font-name}.woff')) format('woff'), url(if($custom-bootstrap-sass-asset-helper, twbs-font-path('#{$custom-icon-font-path}#{$custom-icon-font-name}.ttf'), '#{$custom-icon-font-path}#{$custom-icon-font-name}.ttf')) format('truetype'), url(if($custom-bootstrap-sass-asset-helper, twbs-font-path('#{$custom-icon-font-path}#{$custom-icon-font-name}.svg##{$custom-icon-font-svg-id}'), '#{$custom-icon-font-path}#{$custom-icon-font-name}.svg##{$custom-icon-font-svg-id}')) format('svg');
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-unlocked:before {
+  content: "\e600";
+}
+
+/* End Custom Font Face
+---------------------------------------------------------------------------*/

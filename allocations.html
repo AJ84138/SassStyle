@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+<!-- Meta, title, CSS, favicons, etc. -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>:: Welcome in Onboard ::</title>
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+<script src="js/bootstrap.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script src="js/common.js"></script>
+</head>
+<body>
+
+
+<!-- search-for-allocations -->
+<div class="modal fade " id="search-for-allocations" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="glyphicon glyphicon-remove-circle"></span></button>
+				<h3 class="modal-title" id="myModalLabel">Search For Allocations</h3>
+			</div>
+			<div class="modal-body clearfix">
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="form-horizontal">
+							<h4 class="separate-section">Facility Criteria</h4>
+							<div class="form-group">
+								<label class="col-md-4 col-sm-4 control-label">Region</label>
+								<div class="col-md-8 col-sm-8">
+									<div class="row">
+										<select class="form-control">
+											<option>Please Select</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-4 col-sm-4 control-label">Location</label>
+								<div class="col-md-8 col-sm-8">
+									<div class="row">
+										<select class="form-control">
+											<option>Please Select</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-md-4 col-sm-4 control-label">Facility</label>
+								<div class="col-md-8 col-sm-8">
+									<div class="row">
+										<select class="form-control">
+											<option>Please Select</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<hr class="divider"/>
+							<div class="form-group">
+								<label class="col-md-4 col-sm-4 control-label">Allocation Type</label>
+								<div class="col-md-8 col-sm-8">
+									<div class="row">
+										<select class="form-control">
+											<option>Please Select</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+				<button type="button" class="btn btn-success" data-dismiss="modal">Search</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="wrapper">
+	<div class="header clearfix" id="top">
+		<div class="container">
+			<div class="col-sm-4">
+				<div class="row"><a href="index.html" class="logo"><img src="images/logo.png" title="" alt=""/> </a></div>
+			</div>
+			<div class="col-sm-8 text-right">
+				<div class="row">
+					<ul class="user-status nav navbar-nav">
+						<li class="dropdown"> <a aria-expanded="false" role="button" aria-haspopup="true" data-toggle="dropdown"
+                                   class="dropdown-toggle" href="#" id="drop1"> Santosh Kumar <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span> </a>
+							<ul aria-labelledby="drop1" role="menu" class="dropdown-menu">
+								<li role="presentation"><a href="administration.html" tabindex="-1" role="menuitem">Administration</a></li>
+								<li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
+								<li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
+								<li role="presentation"><a href="login.html" tabindex="-1" role="menuitem">Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-container">
+		<div class="container">
+			<div class="sub-header">
+				<div class="admin-header">
+					<form class="form-inline pull-right" id="search">
+						<div class="form-group">
+							<input type="text" class="form-control search-box" id="" placeholder="Search...">
+							<button type="submit" class="btn btn-default go-btn">Go</button>
+						</div>
+					</form>
+					<h1>
+						<button type="button" class="navbar-toggle custom-slide"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+						Administration</h1>
+				</div>
+				<div class="main-nav col-sm-12">
+					<nav class="collapse navbar-collapse bs-navbar-collapse">
+						<div class="row">
+							<ul class="">
+								<li><a href="#">Consoles <span aria-hidden="true"
+                                                       class="glyphicon glyphicon-chevron-down"></span></a>
+									<ul>
+										<li><a href="reservations.html">Reservations</a></li>
+										<li><a href="events.html">Events</a></li>
+										<li><a href="switch.html">Switch</a></li>
+										<li><a href="approval.html">Approval</a></li>
+										<li><a href="visitors.html">Visitors</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Buildings <span aria-hidden="true"
+                                                        class="glyphicon glyphicon-chevron-down"></span></a>
+									<ul>
+										<li><a href="add-Building.html">Add Building</a></li>
+										<li><a href="manage-buildings.html">Manage Buildings</a></li>
+										<li><a href="add-hotspots.html">Add Hotspots</a></li>
+										<li><a href="manage-hierarchy.html">Manage Hierarchy</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Resources <span aria-hidden="true"
+                                                        class="glyphicon glyphicon-chevron-down"></span></a>
+									<ul>
+										<li><a href="add-resources.html">Add Resource</a></li>
+										<li><a href="manage-resources.html">Manage Resources</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Users <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span></a>
+									<ul>
+										<li><a href="add-user.html">Add User</a></li>
+										<li><a href="manage-your-profile.html"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right pull-right"></span>Manage Your Profile </a>
+											<ul>
+												<li><a href="edit-your-profile.html">Edit Your Profile</a></li>
+												<li><a href="change-your-password.html">Change Your Password</a></li>
+											</ul>
+										</li>
+										<li><a href="#"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right pull-right"></span>Manage Another User’s Profile </a>
+											<ul>
+												<li><a href="edit-another-users-profile.html">Edit Another User’s Profile</a> </li>
+												<li><a href="reset-another-users-password.html">Reset Another User’s
+													Password</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="#">Telephony <span aria-hidden="true"
+                                                        class="glyphicon glyphicon-chevron-down"></span></a>
+									<ul>
+										<li><a href="operators.html"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right pull-right"></span>Operators </a>
+											<ul>
+												<li><a href="add-operator.html">Add Operator</a> </li>
+												<li><a href="manage-operators.html">Manage Operators</a></li>
+											</ul>
+										</li>
+										<li><a href="#"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right pull-right"></span>Switches </a>
+											<ul>
+												<li><a href="add-switch.html">Add Switch</a> </li>
+												<li><a href="Manage-switches.html">Manage Switches</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="#">Allocations <span aria-hidden="true"
+                                                         class="glyphicon glyphicon-chevron-down"></span></a>
+									<ul>
+										<li><a href="allocations.html"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right pull-right"></span>Allocations </a>
+											<ul>
+												<li><a href="add-allocation.html">Add Allocation</a></li>
+												<li><a href="manage-allocations.html">Manage Allocations</a></li>
+											</ul>
+										</li>
+										<li><a href="#"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right pull-right"></span>Allocation Types </a>
+											<ul>
+												<li><a href="add-allocation-type.html">Add Allocation Type</a></li>
+												<li><a href="manage-allocation-types.html">Manage Allocation Types</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="#">System <span aria-hidden="true" class="glyphicon glyphicon-chevron-down"></span></a>
+									<ul>
+										<li><a href="vendors.html"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right pull-right"></span>Vendors </a>
+											<ul>
+												<li><a href="add-vendor.html">Add Vendor</a></li>
+												<li><a href="manage-vendors.html">Manage Vendors</a></li>
+											</ul>
+										</li>
+										<li><a href="#"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right pull-right"></span>Charge Codes </a>
+											<ul>
+												<li><a href="add-charge-code.html">Add Charge Code</a></li>
+												<li><a href="manage-charge-codes.html">Manage Charge Codes</a></li>
+											</ul>
+										</li>
+										<li><a href="#"><span aria-hidden="true" class="glyphicon glyphicon-chevron-right pull-right"></span>Other </a>
+											<ul>
+												<li><a href="reports.html">Reports</a></li>
+												<li><a href="reservation-categories.html">Reservation Categories</a></li>
+												<li><a href="mobile-configuration.html">Mobile Configuration</a></li>
+												<li><a href="settings.html">Settings</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<h1>Add User</h1>
+				</div>
+				<div class="col-md-2 col-sm-3 col-xs-12 sidebar">
+					<ul>
+						<li><a href="add-user.html"><span>Personal Information</span></a> </li>
+						<li><a href="favorites.html"><span>Favorites</span></a> </li>
+						<li><a href="delegates.html"><span>Delegates</span></a> </li>
+						<li><a href="switch-profile.html"><span>Switch Profile</span></a> </li>
+						<li><a href="business-rules.html"><span>Business Rules</span></a> </li>
+						<li class="active"><a href="allocations.html"><span>Allocations</span></a> </li>
+						<li><a href="right.html"><span>Rights</span></a> </li>
+						<li><a href="user-credentials.html"><span>User Credentials</span></a> </li>
+						<li><a href="reservations.html"><span>Reservations</span></a> </li>
+						<li><a href="people.html"><span>People</span></a> </li>
+					</ul>
+				</div>
+				<div class="col-md-10 col-sm-9 col-xs-12 page-content">
+					<h4 class="separate-section"> Allocations</h4>
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-sm-5">
+								<div class="row">
+									<div class="user-allocation allocations">
+										<div class="allocations-list allocations-list-active">
+											<ul>
+												<li><span> Allocation list</span></li>
+												<li><span> Allocation list</span></li>
+												<li><span> Allocation list</span></li>
+												<li><span> Allocation list</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-2 text-center  switch-btns">
+								<button type="button" class="btn btn-primary btn-block"><strong> >> </strong> </button>
+								<button type="button" class="btn btn-primary btn-block"><strong> > </strong></button>
+								<button type="button" class="btn btn-primary btn-block"><strong> < </strong></button>
+								<button type="button" class="btn btn-primary btn-block"><strong> << </strong></button>
+							</div>
+							<div class="col-sm-5">
+								<div class="row">
+									<div class="other-allocation allocations allocations-list-active">
+										<div class="allocations-list">
+											<ul>
+												<li><span> Allocation list</span></li>
+												<li><span> Allocation list</span></li>
+												<li><span> Allocation list</span></li>
+												<li><span> Allocation list</span></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 text-right marg-t20">
+								<div class="row">
+									<button type="button" class="btn btn-success" data-toggle="modal" data-target="#search-for-allocations"><strong> Search For Allocations </strong></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 text-right">
+						<div class="row">
+							<hr class="" />
+							<button class="btn btn-default go-btn" type="submit">Cancel</button>
+							<button class="btn btn-success go-btn" type="submit">Save</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

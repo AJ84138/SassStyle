@@ -1,0 +1,75 @@
+//
+//  Animations
+// --------------------------------------------------
+
+/* Animation Bounce In */
+// use of keyframes mixin
+@include keyframes(fadeInDown) {
+  0% {
+   opacity: 0;
+   @include translate(0, -20px);
+  }
+   100% {
+   opacity: 1;
+   @include translate(0, 0);   
+  }
+}
+
+.fadeInDown {
+	@include animation(fadeInDown ease-in-out 0.8s);
+}
+
+/*Flip In X Animation */
+@include keyframes(flipInX) {
+  0% {
+   -webkit-transform: perspective(800px) rotateX(90deg);
+   transform: perspective(800px) rotateX(90deg);
+   opacity: 0;
+  }
+   100% {
+   -webkit-transform: perspective(800px) rotateX(0deg);
+   transform: perspective(800px) rotateX(0deg);
+   opacity: 1;
+  }
+}
+
+.flipInX {
+	-webkit-backface-visibility: visible !important;
+	-ms-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	@include animation(flipInX ease-in-out 0.8s);
+}
+
+
+/* Pulse Animation */
+@include keyframes(pulse) {
+  0% {
+	  @include scale(1);
+  }
+   50% {
+	   @include scale(1.1);
+  }
+   100% {
+	   @include scale(1);
+  }
+}
+.pulse {
+	@include animation(pulse ease-in-out 0.5s);
+}
+
+
+/* Fade In Down */
+@include keyframes(fadeInUp) {
+  0% {
+   opacity: 1;
+   @include translate(0, 0);
+  }
+   100% {
+   opacity: 0;
+   @include translate(0, -20px);
+  }
+}
+
+.fadeInUp {
+	@include animation(fadeInUp ease-out 0.5s);
+}
